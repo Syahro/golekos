@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:golekos/pages/floating_detail.dart';
 import 'package:golekos/pages/happy_tenant.dart';
 import 'package:golekos/pages/room_space.dart';
 import 'package:golekos/theme.dart';
@@ -7,6 +8,8 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingDetail(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: SafeArea(
         child: Stack(
           children: [
