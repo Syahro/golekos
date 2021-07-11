@@ -103,6 +103,15 @@ class HomePage extends StatelessWidget {
                           'assets/card_payment.png',
                         ),
                       ),
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 0,
+                          blurRadius: 3,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
                     ),
                     child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16),
